@@ -1,4 +1,4 @@
-// API 
+// API Information
 
 let url = "http://api.giphy.com/v1/gifs/search";
 url += '?' + $.param({
@@ -19,3 +19,6 @@ $.get(url)
   .catch(function(e){console.log(e)})
 
 
+// Sample Gif Data
+
+sampleGif=['surfing','wsl','waves','beaches','beer']

@@ -10,9 +10,11 @@ sampleGif.forEach(gif => {
 //Adding new Gif Buttons
 $('.submitGif').on('click', function () {
   event.preventDefault()
+  if ($('#gifName').val().trim()!==""){
   $('#buttonArea').append(`
      <button class="gifBtn" data-gif="${$('#gifName').val().trim()}"> ${$('#gifName').val().trim()}</button>
    `)
+  }
   $('#gifName').val('')
 })
 

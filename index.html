@@ -8,8 +8,8 @@
   <title>GifTastic</title>
 
   <!-- Favicon -->
-  <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon"/>
- 
+  <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 
@@ -21,18 +21,27 @@
 
 </head>
 
-  <form>
-    <label for="title">Keyword:</label>
-    <input type="text" name="gif" id="gifName">
-    <button id="submitGif">Search!</button>
-  </form>
-
-  <div id="buttonArea"></div>
-
-  <div id="gifArea">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">GitTastic</h1>
+    <form class="form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="gifName" placeholder="Keyword">
+        <button type="submit" class="btn btn-primary submitGif">Search</button>
+        <button type="clear" class="btn btn-primary clearGif">Clear</button>
+      </div>
+    </form>
+    <div id="buttonArea"></div>
   </div>
+</div>
 
-  
+<div class="container">
+  <div class="row" id="gifArea">  
+  </div>
+</div>
+
+
+
 
 <body>
 

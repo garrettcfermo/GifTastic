@@ -1,0 +1,74 @@
+/* Jumbotron Styles */
+
+body{
+  font-family: 'Play';
+  background-color: rgb(23, 23, 97);
+  color:white;
+}
+
+
+.jumbotron{
+  padding: 20px 0;
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.display-3 {
+  text-align: center;
+  font-weight: 700;
+  color:white;
+  text-decoration: underline;
+}
+
+.gif-image{
+  height: 300px;
+  width: 100%;
+  margin:5px;
+  text-align: center;
+}
+
+#buttonArea{
+  text-align:center;
+
+}
+
+.btn.btn-primary{
+  margin-top:10px;
+  padding: 5px 40px;
+}
+
+form{
+  text-align: center;
+}
+
+.btn.btn-primary{
+  background-color: rgb(189, 143, 27);
+  font-weight: 800;
+}
+
+.gifBtn{
+  margin:2px;
+  padding:5px 10px;
+  border-radius: 8px;
+  background-color: darkblue;
+  color:white;
+  font-size: 18px;
+}
+
+#gifName {
+  background-color: rgb(23, 23, 97);
+  color:white;
+  border: 1px white solid;
+  padding: 8px;
+}
+
+#gifArea{
+  margin-bottom: 30px;
+}
+
+.gif-rating {
+  text-align: center;
+}
+
+

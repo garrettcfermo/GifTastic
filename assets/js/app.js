@@ -1,5 +1,7 @@
+
+
 //Create Sample Gif Buttons (Initial Load)
-sampleGif = ['surfing', 'wsl', 'waves', 'beach', 'beer']
+sampleGif = ['surf', 'wsl', 'waves', 'beach', 'beer']
 
 sampleGif.forEach(gif => {
   $('#buttonArea').append(`
@@ -34,12 +36,18 @@ $(document).on('click', '.gifBtn', function () {
     .then(function (r) {
       r.data.forEach(gif => {
         $('#gifArea').append(`
-        <div class="col-md-4" >
-        <h4 class="gif-rating">${gif.rating}</h4>
-        <img class="gif-image" src="${gif.images.original.url}" alt=${$(this).attr('data-gif')}>
+        <div class="col-md-6 col-lg-4" >
+        <a href="${gif.images.original.url}" target="_blank"><img class="gif-image" src="${gif.images.original.url}" alt=${$(this).attr('data-gif')}></a>
+        <h4 class="gif-rating">Rated: ${gif.rating}</h4>
         </div>
         `)
       });
     })
     .catch(function (e) { console.log(e) })
+  })
+
+//Clear Gify Area
+$('.clearGif').on('click', function () {
+  event.preventDefault()
+  $('#gifArea').empty()
   })

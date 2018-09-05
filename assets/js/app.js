@@ -24,7 +24,7 @@ $(document).on('click', '.gifBtn', function () {
 
   $('#gifArea').empty()
 
-  let url = "http://api.giphy.com/v1/gifs/search";
+  let url = "https://api.giphy.com/v1/gifs/search";
   url += '?' + $.param({
     'api_key': "EVin2ZZKd1lWiJvD1LG1L0PoysDpYJKy",
     'q': `${$(this).attr('data-gif')}`,

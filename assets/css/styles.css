@@ -1,5 +1,4 @@
-/* Jumbotron Styles */
-
+/* Univeral Styles */
 body{
   font-family: 'Play';
   background-color: rgb(23, 23, 97);
@@ -7,6 +6,7 @@ body{
 }
 
 
+/* Search Area Styles */
 .jumbotron{
   padding: 20px 0;
   background-image: url("../images/background.png");
@@ -28,23 +28,12 @@ body{
   text-align: center;
 }
 
-#buttonArea{
-  text-align:center;
-
-}
-
-.btn.btn-primary{
-  margin-top:10px;
-  padding: 5px 40px;
-}
-
-form{
-  text-align: center;
-}
-
 .btn.btn-primary{
   background-color: rgb(189, 143, 27);
   font-weight: 800;
+  height: 40px;
+  margin-top:10px;
+  padding: 5px 40px;
 }
 
 .gifBtn{
@@ -56,6 +45,14 @@ form{
   font-size: 18px;
 }
 
+form{
+  text-align: center;
+}
+
+#buttonArea{
+  text-align:center;
+}
+
 #gifName {
   background-color: rgb(23, 23, 97);
   color:white;
@@ -63,12 +60,15 @@ form{
   padding: 8px;
 }
 
+
+/* Gif Images Area Styles */
+.gif-rating {
+  text-align: center;
+}
+
 #gifArea{
   margin-bottom: 30px;
 }
 
-.gif-rating {
-  text-align: center;
-}
 
 

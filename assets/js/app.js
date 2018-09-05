@@ -1,8 +1,5 @@
-
-
 //Create Sample Gif Buttons (Initial Load)
-sampleGif = ['surf', 'wsl', 'waves', 'beach', 'beer']
-
+sampleGif = ['Zelda', 'Mario 64', 'Space Invaders', 'Game Consoles', 'Kirby']
 sampleGif.forEach(gif => {
   $('#buttonArea').append(`
      <button class="gifBtn" data-gif="${gif}"> ${gif}</button>
@@ -20,7 +17,7 @@ $('.submitGif').on('click', function () {
 })
 
 
-// Pull the Gif Images and Display
+// Pull the Gif Images and Display them
 $(document).on('click', '.gifBtn', function () {
 
   $('#gifArea').empty()
@@ -28,7 +25,7 @@ $(document).on('click', '.gifBtn', function () {
   let url = "http://api.giphy.com/v1/gifs/search";
   url += '?' + $.param({
     'api_key': "EVin2ZZKd1lWiJvD1LG1L0PoysDpYJKy",
-    'q':`${$(this).attr('data-gif')}`,
+    'q': `${$(this).attr('data-gif')}`,
     'limit': 9
   });
 
@@ -44,10 +41,12 @@ $(document).on('click', '.gifBtn', function () {
       });
     })
     .catch(function (e) { console.log(e) })
-  })
+})
+
 
 //Clear Gify Area
 $('.clearGif').on('click', function () {
   event.preventDefault()
   $('#gifArea').empty()
-  })
+})
+

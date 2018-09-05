@@ -1,5 +1,5 @@
 //Create Sample Gif Buttons (Initial Load)
-sampleGif = ['Zelda', 'Mario 64', 'Space Invaders', 'Game Consoles', 'Kirby']
+sampleGif = ['Zelda', 'Super Mario', 'Space Invaders', 'Game Consoles', 'Kirby']
 sampleGif.forEach(gif => {
   $('#buttonArea').append(`
      <button class="gifBtn" data-gif="${gif}"> ${gif}</button>
@@ -36,7 +36,7 @@ $(document).on('click', '.gifBtn', function () {
       r.data.forEach(gif => {
         $('#gifArea').append(`
         <div class="col-md-6 col-lg-4" >
-        <a href="${gif.images.original.url}" target="_blank"><img class="gif-image" src="${gif.images.original.url}" alt=${$(this).attr('data-gif')}></a>
+        <a href="${gif.images.original.url}" target="_blank"><img class="gif-image" src="${gif.images.original.url}" alt="Loading Error!"></a>
         <h4 class="gif-rating">Rated: ${gif.rating}</h4>
         </div>
         `)
